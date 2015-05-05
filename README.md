@@ -18,4 +18,5 @@ Would display (among many others):
 
 # Options
 * **`-s, --sort <field>`**: Sort by name, maintainers, downloads or version. Defaults to downloads.
+	* Prefix any field with a `-` to reverse the sort.
 * **`-u, --update`**: Updates the local cache before the search. May be slow.

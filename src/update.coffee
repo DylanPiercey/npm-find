@@ -26,8 +26,8 @@ module.exports = (cache)->
 	)
 
 	for name, repo of repos
-		progress.tick()
 		unless cache[name] and cache[name].synced > aWeekAgo
 			cache[name] = yield fetchDownloads(repo)
+		progress.tick()
 
 	yield fs.writeFile("#{__dirname}/../cache.json", JSON.stringify(cache))
