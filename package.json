@@ -1,0 +1,36 @@
+{
+  "name": "npm-find",
+  "version": "0.0.1",
+  "description": "Utility to more easily search and sort npm repositories.",
+  "bin": "lib/index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DylanPiercey/npm-find.git"
+  },
+  "author": "Dylan Piercey <pierceydylan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DylanPiercey/npm-find/issues"
+  },
+  "homepage": "https://github.com/DylanPiercey/npm-find",
+  "devDependencies": {
+    "coffee-script": "^1.9.2",
+    "gulp": "^3.8.11",
+    "gulp-coffee": "^2.3.1",
+    "gulp-mocha": "^2.0.1",
+    "should": "^6.0.1"
+  },
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "co": "^4.5.2",
+    "co-request": "^0.2.1",
+    "commander": "^2.8.1",
+    "mz": "^1.3.0",
+    "npm": "^2.8.4",
+    "progress": "^1.1.8",
+    "thunkify": "^2.1.2"
+  }
+}
