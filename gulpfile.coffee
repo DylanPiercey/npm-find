@@ -1,9 +1,10 @@
-fs      = require("fs")
-gulp    = require("gulp")
-coffee  = require("gulp-coffee")
-mocha   = require("gulp-mocha")
-src     = "./src"
-lib     = "./lib"
+fs     = require("fs")
+gulp   = require("gulp")
+coffee = require("gulp-coffee")
+header = require("gulp-header")
+mocha  = require("gulp-mocha")
+src    = "./src"
+lib    = "./lib"
 
 try fs.mkdirSync(__dirname + lib)
 
@@ -17,6 +18,7 @@ gulp.task("build", ->
 			console.log(err.stack)
 			this.emit("end")
 		))
+		.pipe(header("#!/usr/bin/env node\n"))
 		.pipe(gulp.dest(lib))
 )
 

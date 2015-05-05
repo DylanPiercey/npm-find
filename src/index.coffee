@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 fs      = require("mz/fs")
 co      = require("co")
 chalk   = require("chalk")
